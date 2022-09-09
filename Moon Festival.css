@@ -1,0 +1,106 @@
+body{
+  background:#151320;
+}
+
+#canvas{
+  border: 1px solid #151320;
+  width:100%;
+  background:black;
+  
+  border-top: 3px solid #ff0066;
+  border-right: 2px solid #ff0066;
+  border-bottom: 3px solid #ff0066;
+  border-left: 2px solid #ff0066;
+}
+
+button{
+  cursor: pointer;
+  border:0;
+  color:#000;
+  background: #ff002f2f;
+  padding: 18px 32px;
+  border-radius: 6px;
+  font: 600 22px 'Montserrat';
+  box-shadow: 0 6px 0 #ff0030;
+  transition: .3s;
+}
+
+button:active{
+  transform: translateY(5px);
+  box-shadow: 0 3px 0 #ff0030;
+}
+
+@keyframes light-color{
+  15%{background-color:#ff3300}
+  35%{background-color:yellow}
+  55%{background-color:#00ff00}
+  75%{background-color:#3333ff}
+  98%{background-color:#ff0066}
+}
+
+.box1{
+  width:30px;
+  height:30px;
+  position:relative; left:350px; bottom:-40px; 
+  opacity:0.6; border-radius:40px;
+  background-color:#cc0099;
+}
+
+.box1-animation{
+  animation-name:light-color;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+  animation-delay:0.5s;
+}
+
+.box2{
+  width:30px;
+  height:30px;
+  position:relative; left:230px; bottom:-10px; 
+  opacity:0.6; border-radius:40px;
+  background-color:#cc0099;
+}
+
+.box2-animation{
+  animation-name:light-color;
+  animation-duration:3.5s;
+  animation-iteration-count:infinite;
+  animation-delay:0.2s;
+}
+
+.box3{
+  width:30px;
+  height:30px;
+  position:relative; left:110px; bottom:20px; 
+  opacity:0.6; border-radius:40px;
+  background-color:#cc0099;
+}
+
+.box3-animation{
+  animation-name:light-color;
+  animation-duration:2.5s;
+  animation-iteration-count:infinite;
+  animation-delay:0.1s;
+}
+
+.box4{
+  width:30px;
+  height:30px;
+  position:relative; left:0px; bottom:50px; 
+  opacity:0.6; border-radius:40px;
+  background-color:#cc0099;
+}
+
+.box4-animation{
+  animation-name:light-color;
+  animation-duration:4s;
+  animation-iteration-count:infinite;
+  animation-delay:0.5s;
+}
+
+.container{
+border-radius: 5px;
+background: linear-gradient(315deg, #00ffff, #00e6de);
+box-shadow:  -18px -18px 36px #00ccc6,
+             18px 18px 36px #00ffff;
+}
